@@ -14,3 +14,8 @@ module.exports = {
     port: 8080, // 可以改為其他埠號
   },
 };
+
+// vue.config.js
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/colorgame/' : '/'
+};
